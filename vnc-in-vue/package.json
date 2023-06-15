@@ -1,0 +1,82 @@
+{
+  "name": "hb-kanban",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "dev": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@novnc/novnc": "^1.4.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "better-xlsx": "^0.7.4",
+    "core-js": "^2.6.5",
+    "echarts": "^5.1.2",
+    "element-ui": "2.13.2",
+    "file-saver": "^2.0.2",
+    "less-loader": "^6.0.0",
+    "moment": "^2.24.0",
+    "node-cmd": "^3.0.0",
+    "node-sass": "^4.14.1",
+    "qs": "^6.7.0",
+    "scss": "^0.2.4",
+    "style-resources-loader": "^1.4.1",
+    "view-design": "^4.6.1",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.1.2"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@vue/cli-plugin-babel": "^3.9.0",
+    "@vue/cli-plugin-eslint": "^3.9.0",
+    "@vue/cli-service": "^3.9.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "axios": "^0.18.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "iview-loader": "^1.3.0",
+    "sass-loader": "^8.0.2",
+    "script-loader": "^0.7.2",
+    "terser-webpack-plugin": "^1.4.1",
+    "vue-cli-plugin-axios": "0.0.4",
+    "vue-particles": "^1.0.9",
+    "vue-template-compiler": "^2.6.10",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/prettier"
+    ],
+    "rules": {
+      "no-console": "off",
+      "no-debugger": "off",
+      "vue/no-parsing-error": [
+        2,
+        {
+          "x-invalid-end-tag": false
+        }
+      ]
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

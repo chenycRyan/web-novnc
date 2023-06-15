@@ -1,0 +1,138 @@
+{
+	
+	"easycom": {
+		"^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+	},
+
+	"pages": [
+		{
+			"path": "pages/home/home",
+			"name":"home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom", 
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/mine/mine",
+			"name":"mine",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/webView/webView",
+			"name":"webView",
+			"style": {
+				"navigationBarTitleText": "H5页面",
+				"navigationStyle": "custom", 
+				"enablePullDownRefresh": false
+			}
+		}
+		
+	],
+
+	
+	"subPackages": [{
+		"root": "subpages", 
+		
+		"pages": [{
+			"path": "test",
+			"name":"test",
+			"style": {
+				"navigationBarTitleText": "分包test页面",
+				"enablePullDownRefresh": false
+			}
+		}]
+	},
+	{
+		"root": "pages", 
+		
+		"pages": [{
+			"path": "guidePage/guidePage",
+			"name":"guidePage",
+			"style": {
+				"navigationBarTitleText": "引导页",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom" 
+			}
+		},{
+			"path": "login/login",
+			"name":"login",
+			"style": {
+				"navigationBarTitleText": "登录页",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false 
+			}
+
+		},{
+			"path": "404/404",
+			"name":"404",
+			"style": {
+				"navigationBarTitleText": "404",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "versionUpdate/versionUpdate",
+			"name":"versionUpdate",
+			"style": {
+				"navigationBarTitleText": "APP更新",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"background": "transparent",
+					"webviewBGTransparent": true, 
+					"popGesture": "none" 
+				}
+			}
+		}
+	
+	]
+	
+	}],
+	
+	"preloadRule": {
+		
+		"pages/home/home": {
+			"network": "all", 
+			"packages": ["__APP__"] 
+		}
+	},
+
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"background": "#efeff4"
+		}
+	},
+
+	
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#3590e1",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "white",
+		"list": [{
+			"iconPath": "static/images/icon_home_nochecked.png",
+			"selectedIconPath": "static/images/icon_home_checked.png",
+			"pagePath": "pages/home/home",
+			"text": "首页"
+		}, {
+			"iconPath": "static/images/icon_shenpi_nochecked.png",
+			"selectedIconPath": "static/images/icon_shenpi_checked.png",
+			"pagePath": "pages/webView/webView",
+			"text": "H5"
+		}, {
+			"iconPath": "static/images/icon_mine_nochecked.png",
+			"selectedIconPath": "static/images/icon_mine_checked.png",
+			"pagePath": "pages/mine/mine",
+			"text": "我的"
+		}]
+	}
+}
