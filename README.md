@@ -1,6 +1,6 @@
 # web-novnc
 
-通过浏览器远程访问 Windows 桌面，浏览器不支持 VNC，所以不能直接连接 VNC，但是可以使用代理，使用 noVNC 通过 WebSocket 建 立连接
+局域网web远程桌面，通过浏览器远程访问 Windows 桌面，浏览器不支持 VNC，所以不能直接连接 VNC，但是可以使用代理，使用 noVNC 通过 WebSocket 建立连接
 
 ## 目标：
 
